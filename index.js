@@ -135,9 +135,9 @@ app.post('/customers', async (req, res) => {
 
 // Create product (admin only)
 cloudinary.config({
-    cloud_name: 'ddzwdgcyr',
-    api_key: '814981324338489',
-    api_secret: 'V6F96tC2RqKyC1mNJIqYYgdusUI',
+    cloud_name: 'CLOUD_NAME',
+    api_key: 'CLOUD_API_KEY',
+    api_secret: 'CLOUD_API_SECRET',
   });
 app.post('/products', upload.single('image'), async (req, res) => {
     const { name, price } = req.body;
